@@ -18,14 +18,13 @@ usage ./create_data [--help | -h]
 
 }
 function run {
-    touch result_
-    mono "$FILE_NAME" "$1" "$2" > $FILE_NAME"_data_$1_$2"
+    mono "$FILE_NAME" "$1" "$2" > "res_data_$1_$2"
     for (( i=0; i<2; i++))
     do
-        mono "$FILE_NAME" "$1" "$2" >> $FILE_NAME"_data_$1_$2"
+        mono "$FILE_NAME" "$1" "$2" >> "res_data_$1_$2"
     done
-    echo "$1 $2" >> result_
-    python38 statistics.py $FILE_NAME"_data_$1_$2" >> "result_$FILE_NAME"
+    echo "$1 $2" >> resulter
+    python38 statistics.py "res_data_$1_$2" >> "resulter"
 }
 
 function main {

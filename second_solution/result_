@@ -1,46 +1,45 @@
 5 1
-count av: 373
-wait av: 5669
-average diff: 11
-max diff: 30
-5 10
-count av: 392
-wait av: 6411
+count av: 382
+wait av: 8811
 average diff: 14
-max diff: 37
+max diff: 38
+5 10
+count av: 383
+wait av: 11062
+average diff: 12
+max diff: 31
 5 50
-count av: 404
-wait av: 11723
-average diff: 15
-max diff: 36
+count av: 397
+wait av: 16405
+average diff: 20
+max diff: 63
 100 1
 count av: 384
-wait av: 6021
+wait av: 9152
 average diff: 10
-max diff: 48
+max diff: 46
 100 10
-count av: 392
-wait av: 6581
+count av: 396
+wait av: 11041
 average diff: 10
-max diff: 54
+max diff: 43
 100 50
-count av: 399
-wait av: 11347
+count av: 398
+wait av: 15806
 average diff: 10
-max diff: 60
+max diff: 72
 1000 1
-count av: 381
-wait av: 6009
+count av: 387
+wait av: 9252
 average diff: 12
-max diff: 73
+max diff: 72
 1000 10
-count av: 400
-wait av: 6709
-average diff: 12
-max diff: 83
+count av: 403
+wait av: 11165
+average diff: 13
+max diff: 77
 1000 50
-count av: 407
-wait av: 11350
-average diff: 12
-max diff: 74 
-5 1
+count av: 409
+wait av: 16206
+average diff: 14
+max diff: 83

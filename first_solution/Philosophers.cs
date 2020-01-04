@@ -35,10 +35,10 @@ namespace philosophers_os
             if (this.debug_flag)
                 Console.WriteLine(this.id + " thinking");
 
-            Thread.Sleep(this.random.Next(0, 100)); 
+            Thread.Sleep(this.random.Next(0, 100));
             if (this.debug_flag)
                 Console.WriteLine(this.id + " hungry");
-            
+
             this.wait_start = DateTime.Now;
         }
 
@@ -105,7 +105,7 @@ namespace philosophers_os
     {
         static void Main(string[] args)
         {
-            int N = 5;
+            int N = 1000;
             bool dbg = false;
             int duration = 60000;
 

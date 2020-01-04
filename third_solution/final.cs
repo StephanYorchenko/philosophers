@@ -38,24 +38,21 @@ namespace philosophers_os
 
         void think()
         {
-            if (this.debug_flag)
-                Console.WriteLine(this.id + " thinking");
-
-            Thread.Sleep(this.random.Next(0, 100)); 
-            if (this.debug_flag)
-                Console.WriteLine(this.id + " hungry");
-            
+            this.wait_time += DateTime.Now.Subtract(this.wait_start).TotalMilliseconds;
+            Thread.Sleep(this.random.Next(0, 100));
             this.wait_start = DateTime.Now;
         }
 
         void eat()
         {
             this.wait_time += DateTime.Now.Subtract(this.wait_start).TotalMilliseconds;
+
             if (this.debug_flag)
                 Console.WriteLine(this.id + " eating");
 
             Thread.Sleep(this.random.Next(0, 100));
             eat_count++;
+            this.wait_start = DateTime.Now;
         }
 
         public Philosopher(int number, Fork first, Fork second, bool dbg, int timeout)
@@ -73,6 +70,7 @@ namespace philosophers_os
 
         public void run()
         {
+            this.wait_start = DateTime.Now;
             while (!stop_flag)
             {
                 think();
