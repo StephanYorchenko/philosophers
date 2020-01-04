@@ -1,0 +1,45 @@
+5 1
+count av: 355
+wait av: 26
+average diff: 20
+max diff: 69
+5 10
+count av: 355
+wait av: 423
+average diff: 15
+max diff: 48
+5 50
+count av: 386
+wait av: 7214
+average diff: 26
+max diff: 61
+100 1
+count av: 341
+wait av: 19
+average diff: 10
+max diff: 57
+100 10
+count av: 350
+wait av: 414
+average diff: 13
+max diff: 64
+100 50
+count av: 387
+wait av: 7404
+average diff: 11
+max diff: 79
+1000 1
+count av: 336
+wait av: 15
+average diff: 11
+max diff: 94
+1000 10
+count av: 358
+wait av: 436
+average diff: 13
+max diff: 90
+1000 50
+count av: 393
+wait av: 7475
+average diff: 13
+max diff: 92

@@ -1,0 +1,46 @@
+5 1
+count av: 373
+wait av: 5669
+average diff: 11
+max diff: 30
+5 10
+count av: 392
+wait av: 6411
+average diff: 14
+max diff: 37
+5 50
+count av: 404
+wait av: 11723
+average diff: 15
+max diff: 36
+100 1
+count av: 384
+wait av: 6021
+average diff: 10
+max diff: 48
+100 10
+count av: 392
+wait av: 6581
+average diff: 10
+max diff: 54
+100 50
+count av: 399
+wait av: 11347
+average diff: 10
+max diff: 60
+1000 1
+count av: 381
+wait av: 6009
+average diff: 12
+max diff: 73
+1000 10
+count av: 400
+wait av: 6709
+average diff: 12
+max diff: 83
+1000 50
+count av: 407
+wait av: 11350
+average diff: 12
+max diff: 74 
+5 1

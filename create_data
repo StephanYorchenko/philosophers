@@ -1,0 +1,55 @@
+#!/bin/bash
+
+FILE_NAME="fin.exe"
+
+function help {
+    
+    echo "Используется для автоматизирования 
+тестирования скриптов. Проверяются случаи для 5, 10 и 1000
+философов и 1, 10 и 50 секунд ожидания вилки.
+
+=====================================
+usage ./create_data [--help | -h]
+                    [--programm | -p]
+                    
+--help, -h - print this help;
+
+--program, -p - name of .exe file"    
+
+}
+function run {
+    touch result_
+    mono "$FILE_NAME" "$1" "$2" > $FILE_NAME"_data_$1_$2"
+    for (( i=0; i<2; i++))
+    do
+        mono "$FILE_NAME" "$1" "$2" >> $FILE_NAME"_data_$1_$2"
+    done
+    echo "$1 $2" >> result_
+    python38 statistics.py $FILE_NAME"_data_$1_$2" >> "result_$FILE_NAME"
+}
+
+function main {
+    FILE_NAME="$1"
+    for k in 5 100 1000 
+    do
+        echo $k
+        for j in 1 10 50
+        do
+            echo $j
+            run $k $j
+        done  
+    done        
+}
+
+if [[ -n "$1" ]]
+then
+    case "$1" in
+        -h) help;;
+        --help) help;;
+        -p) main $2;;
+        --programm) main $2;;
+        *) help;;
+    esac
+else
+    main "second_variant.exe"
+fi
